@@ -1,0 +1,157 @@
+	.board-container {
+    width: 100%; /* 👉 board-section 안에서 꽉 차도록 설정 */
+    height: 100%; /* 👉 board-section의 높이를 따라감 */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 👉 내부 내용이 위쪽부터 채워지도록 설정 */
+    overflow: hidden; /* 👉 넘치는 내용 방지 */
+}
+	#board-section {
+    background-color: #ffffff;
+    flex-grow: 1; /* 👉 가능한 공간 모두 차지 */
+    min-height: 300px; /* 👉 기본 최소 높이 */
+    height: auto; /* 👉 자동 높이 조정 */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-content {
+    width: calc(100% - 40px); /* 👉 padding 값(20px * 2) 제외한 가로 크기 설정 */
+    max-width: 100%; /* 부모 요소를 초과하지 않도록 설정 */
+    box-sizing: border-box; /* padding과 border를 width에 포함 */
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    white-space: normal; /* ✅ 자동 줄바꿈 허용 */
+    word-wrap: break-word; /* ✅ 긴 단어가 넘치지 않도록 줄바꿈 */
+    overflow-wrap: break-word; /* ✅ 추가적으로 긴 단어를 강제 줄바꿈 */
+    word-break: break-word; /* ✅ 한글 등 긴 단어가 있을 경우 줄바꿈 */
+    align-self: stretch; /* 부모 크기에 맞춰 자동 확장 */
+}
+   .post-info {
+      margin-bottom: 20px;
+   }
+
+   .post-info span {
+      display: inline-block;
+      margin-right: 20px;
+      font-size: 14px;
+      color: #666;
+   }
+   
+   
+   
+#reply-section {
+    width: calc(100% - 260px); /* 👉 product-section 크기(250px + 여백 10px)만큼 줄이기 */
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+/* ✅ 댓글 제목 */
+#reply-section h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0078ff;
+    border-bottom: 2px solid #0078ff;
+    padding-bottom: 10px;
+}
+
+/* ✅ 댓글이 없을 때 메시지 */
+.no-replies {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+/* ✅ 댓글 목록 스타일 */
+.reply-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ✅ 개별 댓글 스타일 */
+.reply-item {
+    padding: 12px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* ✅ 댓글 헤더 (작성자 + 날짜) */
+.reply-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* ✅ 댓글 내용 */
+.reply-content {
+    font-size: 16px;
+    color: #444;
+    word-wrap: break-word;
+    white-space: pre-line;
+}
+
+/* ✅ 댓글 작성 폼 */
+.reply-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* ✅ 댓글 입력창 */
+.reply-form textarea {
+    width: 100%;
+    height: 80px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
+}
+
+/* ✅ 댓글 등록 버튼 */
+.reply-form button {
+    align-self: flex-end;
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #0078ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.reply-form button:hover {
+    background-color: #0056b3;
+}
+
+/* ✅ 로그인 필요 메시지 */
+.login-warning {
+    text-align: center;
+    font-size: 14px;
+    color: #ff4444;
+}

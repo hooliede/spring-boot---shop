@@ -1,0 +1,64 @@
+.main-container {
+         width: 1200px;
+         margin: 0 auto;
+         background-color: #ffffff;         
+         padding: 30px;
+         overflow: visible;
+         grid-template-rows: auto auto;
+      }
+   
+      .main-layout {
+    	display: flex;
+    	justify-content: space-between; /* 양쪽 정렬 */
+    	align-items: flex-start; /* 위쪽 정렬 */
+    	gap: 20px; /* 여백 추가 */
+	}  
+      
+     #category-section {
+    	background-color: #fff;
+    	width: 200px;
+    	max-width: 200px;
+    	height: auto;
+    	overflow: visible;
+    	margin-right: 20px; /* 👉 오른쪽 여백 추가 */
+	}
+      
+    #banner-section {
+        background-color: #fff;
+        width: 100%;
+        height: auto;
+        overflow: hidden;         
+        position: relative;      
+    }
+      /* ✅ product-section: 고정 너비 설정 */
+	#product-section {
+    	width: 250px; /* 적절한 크기로 조정 */
+    	background-color: #fff;
+    	overflow: hidden;
+    	border-radius: 8px;
+	}
+
+      .sub-layout {
+         display: grid;
+         grid-template-columns: 800px 400px;
+         gap: 40px 40px;
+         width: 100%;
+         position: relative;
+      }
+      
+      #customer_center-section {
+      margin-top: 20px;
+         width: auto;
+         height: auto;
+         background-color: #f0f0f0;                        
+         overflow: hidden;
+      }
+      
+      #advertise-section {
+      margin-top: 20px;         
+         width: auto;
+         height: auto;
+         background-color: #fff;                  
+         overflow: hidden;                  
+      }
+   

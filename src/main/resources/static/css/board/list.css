@@ -1,0 +1,99 @@
+/* ✅ 전체 레이아웃 스타일 */
+.board-container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ 제목 스타일 */
+.board-container h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* ✅ 검색 폼 스타일 */
+#searchForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#searchForm select,
+#searchForm input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#searchForm button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#searchForm button:hover {
+    background: #0056b3;
+}
+
+/* ✅ 테이블 스타일 */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.table th, .table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+.table th {
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.table tr:hover {
+    background: #f8f9fa;
+}
+
+/* ✅ 제목 링크 스타일 */
+.table a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.table a:hover {
+    text-decoration: underline;
+}
+
+/* ✅ 글쓰기 버튼 스타일 */
+.text-center a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background: #28a745;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.text-center a.btn:hover {
+    background: #218838;
+}

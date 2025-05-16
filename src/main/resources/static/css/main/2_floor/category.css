@@ -1,0 +1,45 @@
+.menu-container {
+    background-color: #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 180px;    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+/* 버튼 스타일 */
+.menu button {
+    width: 100%;
+    background-color: transparent; /* 버튼 배경 투명 */
+    color: white;
+    border: none; /* 경계선 제거 */
+    font-size: 13px;
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* 호버 효과 */
+    border-radius: 5px;
+}
+
+/* 아이콘 스타일 */
+.menu img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}

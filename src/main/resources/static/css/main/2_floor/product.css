@@ -1,0 +1,40 @@
+
+.product-container {
+   max-width: 300px;
+   height: auto;
+   border-radius: 5px;
+    border: 2px solid #e0e0e0;
+    background-color: #fff; 
+}
+/* 이미지 설정 */
+  .product-container img {
+      width: 100%;    
+      border-radius: 8px;
+      margin-bottom: 15px;
+      margin: auto; /* 이미지 중앙 정렬 */      
+  }
+  
+  
+  
+  .product-info {
+    text-align: center;
+}
+
+.product-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0078ff;
+    margin-bottom: 5px;
+}
+
+.product-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+#price-info {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff5733;
+}

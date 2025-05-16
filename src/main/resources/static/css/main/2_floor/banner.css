@@ -1,0 +1,26 @@
+
+  /* 배너 컨테이너 */
+  .banner-container {
+      width: auto; /* 배너의 전체 너비 */
+      height: 320px; /* 배너의 전체 높이 */
+      overflow: hidden; /* 초과 부분 숨기기 */
+      position: relative; /* 슬라이드 위치 설정 */     
+      display: flex;
+      background-color: #fff;
+      justify-content: center; /* 중앙 정렬 */
+      align-items: center; /* 수직 정렬 */
+      
+  }
+
+  /* 이미지 설정 */
+  .banner-container img {
+      max-width: 100%; /* 이미지가 컨테이너 너비를 넘지 않도록 설정 */
+      max-height: 100%; /* 이미지가 컨테이너 높이를 넘지 않도록 설정 */
+      margin: auto; /* 이미지 중앙 정렬 */
+      display: none; /* 기본적으로 이미지를 숨김 */
+  }
+
+  .banner-container img.active {
+      display: block; /* 활성화된 이미지만 표시 */
+  }
+
