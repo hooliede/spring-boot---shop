@@ -35,3 +35,24 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Logs ###
+logs/
+*.log
+
+### OS ###
+.DS_Store
+Thumbs.db
+
+### Environment / Config (중요) ###
+# ⚠️ 절대 공개 저장소에 올리지 말 것!
+application.properties
+application.yml
+.env
+
+### 기타 ###
+*.tmp
+*.bak
+*.swp
+test-output/
+reports/
